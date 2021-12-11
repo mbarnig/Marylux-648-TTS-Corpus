@@ -8,4 +8,4 @@ The dataset includes the following transcribed clips :
 * Luxembourgish utterances :
 * Luxembourgish words :
 
-I optimzed this dataset to create a luxembourgish synthetic voice **Luxi** by  training a deep machine learning system based on neural networks. 
+I optimized this dataset to create a luxembourgish synthetic voice **Luxi** by  training a deep machine learning system based on neural networks. 
