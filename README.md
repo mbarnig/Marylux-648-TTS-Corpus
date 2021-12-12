@@ -45,4 +45,4 @@ for file in wavs/*.wav; do sox "$file" "output/$file" silence 1 0.01 1% reverse 
 ```   
 The following figure shows the trimmed and normalized audio-clip : 
 
-![trimmed](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/wav-original.png) 
+![trimmed](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/wav-modified.png) 
