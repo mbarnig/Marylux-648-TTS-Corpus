@@ -67,11 +67,22 @@ The audio splitting has been done manually in Audacity. To determine the file si
 * break the related csv-transcription into a new row and add the new filename of the splitted clip in the first column of the new row
 
 At the end when all labels have been set I exported all tracks with the multi-export menu to save the splitted audio clips. The next figure shows the arrangement in my PC window to execute this process as efficient as possible. 
+
+figure
  
 ### Assembling Words
 Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the same arrangement as for the audio splitting. I named the new 12 clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
  
-### Bad Audio Quality
+### Checking Audio Quality
+Bad audio quality with much noise is a no-go for deep machine learning TTS training. Breath, cough, stutter, background noise, echos and other disturbing sounds presents great challenges for TTS model training and must be discarded. There are several tools and python libraries available to denoise the audio clips, but in my trials none of them provided good results without manual supervision. My favorite tool is the [Audacity noise reduction plugin](https://manual.audacityteam.org/man/noise_reduction.html). By selecting a noisy region in the audio track you can define and save a noise profile. The effect of reducing noise based on this profile can be tested in a preview and applied if the result was satisfactory. 
+
+figure audacity plugin
+
+Spectrograms can also be a great help to check the audio quality. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram) version 5. The following figure gives an overview about the features of this software.
+
+![Sonogram 5](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/sonogram-2.png)
+
+Fortunately the original Marylux audio file is of high quality and I was able to discard a few disturbing sounds manually in Audacity during the sound check done for the text correction. 
  
 ### Standard Deviation
  
