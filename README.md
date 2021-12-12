@@ -58,12 +58,21 @@ A better reference for TTS training is RMS (root mean square), the average of th
 
 ![marylux-normalized](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/marylux-normalized-loudness.png)
 
- ### Audio Splitting
+### Audio Splitting
+The audio splitting has been done manually in Audacity. To determine the file size of an uncompressed audio file, we have to multiply the bit rate of the audio by its duration in seconds. An audio file of 10 seconds has a size of 220,50 KB. If we order the audio files in a folder by size, it's easy to select all files exceeding a size of 220 KB and to import them into Audacity. I repeated the following process for all samples :
+
+* set a label in each track at a silence position below the 10 seconds threshold 
+* enter the filename as name of the label by changing the first digit of the filename number (lb-wiki-0192 >> lb-wiki-1192) 
+* listen to the audio clip after the label and select the corresponding transcription in the text editor
+* break the related csv-transcription into a new row and add the new filename of the splitted clip in the first column of the new row
+
+At the end when all labels have been set I exported all tracks with the multi-export menu to save the splitted audio clips. The next figure shows the arrangement in my PC window to execute this process as efficient as possible. 
  
- ### Assembling Words
+### Assembling Words
+Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the same arrangement as for the audio splitting. I named the new clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
  
- ### Bad Audio Quality
+### Bad Audio Quality
  
- ### Standard Deviation
+### Standard Deviation
  
- ### Text Corrections
+### Text Corrections
