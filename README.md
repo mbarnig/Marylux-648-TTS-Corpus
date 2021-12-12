@@ -18,7 +18,7 @@ I optimized this dataset to create a luxembourgish synthetic voice **Luxi** by  
 * The clips with single words have been assembled into samples each with 4 words, separated by commas
 * The clips with noise or wrong pronunciations have been removed
 * The samples with a standard deviation between the audio- and text-length higher than 0.8 have been removed
-* The transcriptions of all remaining clips have been manually checked and the mistakes corrected
+* The transcriptions of all remaining clips have been manually checked, mistakes corrected, numbers and abbreviations expanded
 
  The result is a new database with 640 samples, called Marylux-640-TTS-Corpus.
  
@@ -58,4 +58,12 @@ A better reference for TTS training is RMS (root mean square), the average of th
 
 ![marylux-normalized](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/marylux-normalized-loudness.png)
 
+ ### Audio Splitting
  
+ ### Assembling Words
+ 
+ ### Bad Audio Quality
+ 
+ ### Standard Deviation
+ 
+ ### Text Corrections
