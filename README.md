@@ -85,5 +85,6 @@ Spectrograms can also be a great help to check the audio quality. A great tool i
 Fortunately the original Marylux audio file is of high quality and I was able to discard a few disturbing sounds manually in Audacity during the sound check done for the text correction. 
  
 ### Standard Deviation
+[Coqui-TTS](https://github.com/coqui-ai/TTS/tree/main/notebooks/dataset_analysis) provides several [Jupyter Notebooks](https://jupyter.org) to analyze a new dataset and to find exceptional cases. 
  
 ### Text Corrections
