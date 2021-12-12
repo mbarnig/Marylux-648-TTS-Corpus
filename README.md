@@ -69,7 +69,7 @@ The audio splitting has been done manually in Audacity. To determine the file si
 At the end when all labels have been set I exported all tracks with the multi-export menu to save the splitted audio clips. The next figure shows the arrangement in my PC window to execute this process as efficient as possible. 
  
 ### Assembling Words
-Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the same arrangement as for the audio splitting. I named the new clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
+Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the same arrangement as for the audio splitting. I named the new 12 clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
  
 ### Bad Audio Quality
  
