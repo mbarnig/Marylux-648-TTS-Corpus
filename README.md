@@ -34,6 +34,6 @@ python TTS/bin/resample.py --input_dir /workspace/myTTS-Project/datasets/marylux
 ```   
 
 ### Silence Removal
-The next figure shows a screenshot from the free, open source, cross-platform [audio software Audiocity](https://www.audacityteam.org) showing a typical audio-clip with long silences before and after the speech signal.
+The next figure shows a screenshot from the free, open source, cross-platform [audio software Audacity](https://www.audacityteam.org) showing a typical audio-clip with long silences before and after the speech signal.
 
 ![silence](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/wav-original.png) 
