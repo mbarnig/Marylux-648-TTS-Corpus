@@ -62,7 +62,7 @@ figure 3
 ![marylux-normalized](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/marylux-normalized-loudness.png)
 
 ### Audio Splitting
-The audio splitting has been done manually in Audacity. To calculate the size of an uncompressed audio file, we have to multiply the bit rate of the audio by its duration in seconds. An audio file of 10 seconds has a size of 220,50 KB. If we order the audio files in a folder by size, it's easy to select all files exceeding a size of 220 KB and to import them into Audacity. I repeated the following process for all samples :
+The audio splitting has been done manually in Audacity. To [calculate the size of an uncompressed audio file](https://www.colincrawley.com/audio-file-size-calculator/), we have to multiply the bit rate (352,8 kbps) of the audio by its duration in seconds. An audio file of 10 seconds has a size of 441 KB. If we order the audio files in a folder by size, it's easy to select all files exceeding a size of 440 KB and to import them into Audacity. I repeated the following process for all samples :
 
 * set a label in each track at a silence position below the 10 seconds threshold 
 * enter the filename as name of the label by changing the first digit of the filename number (lb-wiki-0192 >> lb-wiki-1192) 
