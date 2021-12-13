@@ -74,7 +74,7 @@ At the end when all labels have been set I exported all tracks with the multi-ex
 figure 4
  
 ### Assembling Words
-Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the same arrangement as for the audio splitting. I named the new 12 clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
+Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the arrangement shown above. I named the new 12 clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
  
 ### Checking Audio Quality
 Bad audio quality with much noise is a no-go for deep machine learning TTS training. Breath, cough, stutter, background noise, echos and other disturbing sounds presents great challenges for TTS model training and must be discarded. There are several tools and python libraries available to denoise the audio clips, but in my trials none of them provided good results without manual supervision. My favorite tool is the [Audacity noise reduction plugin](https://manual.audacityteam.org/man/noise_reduction.html). By selecting a noisy region in the audio track you can define and save a noise profile. The effect of reducing noise based on this profile can be tested in a preview and applied if the result was satisfactory. 
