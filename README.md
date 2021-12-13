@@ -70,7 +70,7 @@ The audio splitting has been done manually in Audacity. To [calculate the size o
 * break the related csv-transcription into a new row and add the new filename of the splitted clip in the first column of the new row
 * export the two file parts with the old and new filename
 
- The next figure shows the process in the Audacity window. 
+ The next figure shows the process in the Audacity window for sample lb-wiki-0543.wav.
 
 figure 4    
 ![audio-splitting](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/clip-splitting.png)   
