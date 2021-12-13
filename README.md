@@ -66,7 +66,7 @@ The audio splitting has been done manually in Audacity. To [calculate the size o
 
 * set a label in each track at a silence position below the 10 seconds threshold 
 * enter the filename as name of the label by changing the first digit of the filename number (lb-wiki-0192 >> lb-wiki-1192) 
-* listen to the audio clip after the label and select the corresponding transcription in the text editor
+* listen to the audio clip part after the label and select the corresponding transcription in the text editor
 * break the related csv-transcription into a new row and add the new filename of the splitted clip in the first column of the new row
 
 At the end when all labels have been set I exported all tracks with the multi-export menu to save the splitted audio clips. The next figure shows the arrangement in my PC window to execute this process as efficient as possible. 
