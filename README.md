@@ -72,9 +72,8 @@ The audio splitting has been done manually in Audacity. To [calculate the size o
 At the end when all labels have been set I exported all tracks with the multi-export menu to save the splitted audio clips. The next figure shows the arrangement in my PC window to execute this process as efficient as possible. 
 
 figure 4    
-[arrangement](
+![arrangement](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/tools-arrangement.png)
  
-
 ### Assembling Words
 Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the arrangement shown above. I named the new 12 clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
  
