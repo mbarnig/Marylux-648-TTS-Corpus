@@ -37,6 +37,7 @@ python TTS/bin/resample.py --input_dir /workspace/myTTS-Project/datasets/marylux
 The next figure shows a screenshot from the free, open source, cross-platform [audio software Audacity](https://www.audacityteam.org) showing a typical audio-clip with long silence periods before and after the speech signal.
 
 ![silence](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/wav-original.png) 
+figure 1      
 
 The deep machine learning TTS training is disturbed by long silence periods. The tools and software introduced above can also been used to remove silence from audio clips. Here is a typical bash command using `sox` to remove silence and to resample all audio clips in a folder in the same go :    
 
@@ -45,7 +46,8 @@ for file in wavs/*.wav; do sox "$file" "output/$file" silence 1 0.01 1% reverse 
 ```   
 The following figure shows the trimmed and normalized audio-clip : 
 
-![trimmed](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/wav-modified.png) 
+![trimmed](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/wav-modified.png)    
+figure 2     
 
 ### Loudness Settings
 The deep machine learning TTS training is sensitive to the level of the audio signal. To avoid differences in the volume of the clips of a TTS dataset the levels should be normalized. This can be done with the same tools and programs introduced before. We must distinguish between peak- and RMS-levels. The peak level is defined by the highest peaks within the signal independently of the amount of energy they are representing. The audio-signal shown in figure 2 has been normalized to a full-scale peak level. During TTS training this can lead to out-of-range amplitudes and auto-clipping. 
@@ -68,7 +70,7 @@ The audio splitting has been done manually in Audacity. To determine the file si
 
 At the end when all labels have been set I exported all tracks with the multi-export menu to save the splitted audio clips. The next figure shows the arrangement in my PC window to execute this process as efficient as possible. 
 
-figure
+figure 3
  
 ### Assembling Words
 Some TTS models fail while training single words or they ignore them. To avoid these problems I assembled the related audio clips and csv rows manually with Audacity and with the text editor by using the same arrangement as for the audio splitting. I named the new 12 clips as lb-words-a.wav, lb-words-b.wav, up to lb-words-l.wav.
