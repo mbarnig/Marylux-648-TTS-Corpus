@@ -53,10 +53,10 @@ figure 2
 The deep machine learning TTS training is sensitive to the level of the audio signal. To avoid differences in the volume of the clips of a TTS dataset the levels should be normalized. This can be done with the same tools and programs introduced before. We must distinguish between peak- and RMS-levels. The peak level is defined by the highest peaks within the signal independently of the amount of energy they are representing. The audio-signal shown in figure 2 has been normalized to a full-scale peak level. During TTS training this can lead to out-of-range amplitudes and auto-clipping. 
 
 A better reference for TTS training is RMS (root mean square), the average of the loudness in the waveform as a whole. Broadcasters and streaming providers like Youtube or Spotify measure and normalize the loudness in LUFS, which is similar to RMS. The [EBU recommendation R128](https://tech.ebu.ch/docs/r/r128-2014.pdf) (= ITU-R BS.1770) specifies the technical details for the loudness normalization. I used the [Python script loudness.py](https://github.com/csteinmetz1/loudness.py) to normalize the audio clips of the Marylux dataset with a reference level of -25 dB. The next figure shows the following normalized clips in the Audacity program :  
-* lb-wiki-0192 (RMS = -24,51 dB)
-* lb-wiki-0373 (RMS = -24,84 dB)
-* lb-wiki-0477 (RMS = -24,51 dB)
-* lb-wiki-0533 (RMS = -24,38 dB)
+* lb-wiki-0192.wav (RMS = -24,51 dB)
+* lb-wiki-0373.wav (RMS = -24,84 dB)
+* lb-wiki-0477.wav (RMS = -24,51 dB)
+* lb-wiki-0533.wav (RMS = -24,38 dB)
 
 figure 3     
 ![marylux-normalized](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/marylux-normalized-loudness.png)
