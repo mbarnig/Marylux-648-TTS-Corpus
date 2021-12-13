@@ -84,9 +84,9 @@ figure 5
 ![noise plug-in](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/noise-reduction.png)
 
 
-Spectrograms can also be a great help to check the audio quality. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram) version 5. The following figure gives an overview about the features of this software.
+Spectrograms can also be a great help to check the audio quality. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram), version 5. The following figure gives an overview about the features of this software.
 
-figure 7      
+figure 6           
 ![Sonogram 5](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/sonogram-2.png)
 
 Fortunately the original Marylux audio files are of high quality and I was able to discard a few disturbing sounds manually in Audacity during the sound check done for the text correction. 
