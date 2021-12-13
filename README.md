@@ -27,7 +27,7 @@ I optimized this dataset to create a luxembourgish synthetic voice **Luxi** by  
  ## Dataset Transformations
  
  ### Downsampling and format conversion
- There are numerous tools and libraries available to modify the properties of an audio-file which can be used in a bash- or python-script, for example [ffmpeg](https://ffmpeg.org), [sox](http://sox.sourceforge.net/), [librosa](https://librosa.org), ... I used the `resample.py` script from [Coqui-TTS](https://github.com/mbarnig/TTS) based on librosa to process the Marylux dataset. Here is the related command for my environment :
+ There are numerous tools and libraries available to modify the properties of an audio-file which can be used in a bash- or python-script, for example [ffmpeg](https://ffmpeg.org), [sox](http://sox.sourceforge.net/), [librosa](https://librosa.org), ... I used the `resample.py` script from [Coqui-TTS](https://github.com/mbarnig/TTS), based on librosa, to process the Marylux dataset. Here is the related command for my environment :
    
 ``` 
 python TTS/bin/resample.py --input_dir /workspace/myTTS-Project/datasets/marylux/wav48000/ --output_dir /workspace/myTTS-Project/datasets/marylux/wav22050/ --output_sr 22050
