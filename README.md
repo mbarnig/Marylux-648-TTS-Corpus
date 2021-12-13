@@ -94,3 +94,5 @@ Fortunately the original Marylux audio files are of high quality and I was able 
 [Coqui-TTS](https://github.com/coqui-ai/TTS/tree/main/notebooks/dataset_analysis) provides several [Jupyter Notebooks](https://jupyter.org) to analyze a new dataset and to find exceptional cases. 
  
 ### Text Corrections
+
+![arrangement](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/tools-arrangement.png)
