@@ -155,20 +155,31 @@ figure 12
 LOD
 
 ### Luxembourgish Phonemizers
-[eSpeak-NG](https://github.com/espeak-ng/espeak-ng) and [Rhasspy-Gruut](https://github.com/rhasspy/gruut) are two famous open-source phonemizers which are used by numerous TTS projects. A few months ago I developped the code to integrate the [luxembourgish language into eSpeak-NG](https://github.com/mbarnig/espeak-ng-lb). The code was merged into the main eSpeak-NG project with my [Github pull request #1038](https://github.com/espeak-ng/espeak-ng/pull/1038) on November 11, 2021. Now Luxembourgish is the 127th language supported by eSpeak-NG. A luxembourgish voice, based on formant synthesis techniques, is part of my package. The voice is intelligible, but of low quality. I did no sound optimization because my focus was put on the rule-based phonemization front-end process. The eSpeak-NG lb-phonemizer includes a luxembourgish emoji-dictionary which translates some children-emojis into the names of my grand-children. Some animal-graphics are also converted to the related luxembourgish phonetic transcriptions.
+[eSpeak-NG](https://github.com/espeak-ng/espeak-ng) and [Rhasspy-Gruut](https://github.com/rhasspy/gruut) are two famous open-source phonemizers which are used by numerous TTS projects. A few months ago I developped the code to integrate the [luxembourgish language into eSpeak-NG](https://github.com/mbarnig/espeak-ng-lb). The code was merged into the main eSpeak-NG project with my [Github pull request #1038](https://github.com/espeak-ng/espeak-ng/pull/1038) on November 11, 2021. Now Luxembourgish is the 127th language supported by eSpeak-NG. A luxembourgish voice, based on formant synthesis techniques, is part of my package. The voice is intelligible, but of low quality. I did no sound optimization because my focus was put on the rule-based phonemization front-end process. The eSpeak-NG lb-phonemizer includes a luxembourgish emoji-dictionary which translates some children-emojis into the names of my grand-children. Some animal-graphics are also converted to the related luxembourgish phonetic transcriptions. The next figure shows a sentence which can be handled by eSpeak-NG-lb.
 
 figure 10
 [emojis]()
 
 The integration of the luxembourgish language into the [gruut-phonemizer](https://github.com/mbarnig/gruut-lb) is more recent. My [code to support Luxembourgish](https://github.com/mbarnig/gruut-ipa) was merged into the gruut-ipa repository with my [Github pull request #7](https://github.com/rhasspy/gruut-ipa/pull/7) on November 10, 2021. My main code was merged into the gruut project with my [Github pull request #18](https://github.com/rhasspy/gruut/pull/18) on December 6, 2021.
 
+The fully support of the luxembourgish language by the big TTS-projects with embedded eSpeak-NG- or Gruut-Phonemizer is only assured when these projects update their code-base to the latest versions of the concerned dependencies. In the mean-time the luxembourgish phonemes must be provided in the external training- and validation files and some hacking is required to feed these files as input to the TTS-models for training.
+
+For this purpose I prepared different Marylux-648 dataset versions which are described in the next chapter.
+
 ### Luxembourgish Datasets
-
-
 The result is a database of 648 luxembourgish samples. An good splitting of this database for machine learning is the following : 
 
 * training list : 640 (optimal for batch sizes of 64, 32, 20, 16, 10, 8, ...)
 * validation list : 8 (optimal for batch sizes of 8, 4, ...)
 
-A list of 6 sentences from the [Norwand-Fable]() is provided for synthesizing tests during the training.
+A list of 6 luxembourgish sentences based on the [Aesop's fables](https://en.wikipedia.org/wiki/Aesop%27s_Fables) is provided for synthesizing tests during the training.
 
+```  
+De Nordwand an d'Sonn      
+An der Zäit hunn sech den Nordwand an d’Sonn gestridden, wie vun hinnen zwee wuel méi staark wier, wéi e Wanderer, deen an ee waarme Mantel agepak war, iwwert de Wee koum. 
+Si goufen sech eens, datt deejéinege fir dee Stäerkste gëlle sollt, deen de Wanderer forcéiere géif, säi Mantel auszedoen. 
+Den Nordwand huet mat aller Force geblosen, awer wat e méi geblosen huet, wat de Wanderer sech méi a säi Mantel agewéckelt huet. 
+Um Enn huet den Nordwand säi Kampf opginn. 
+Dunn huet d’Sonn d’Loft mat hire frëndleche Strale gewiermt, a schonn no kuerzer Zäit huet de Wanderer säi Mantel ausgedoen. 
+Do huet den Nordwand missen zouginn, datt d’Sonn vun hinnen zwee dee Stäerkste wier.
+```   
