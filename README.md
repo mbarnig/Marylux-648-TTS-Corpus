@@ -18,7 +18,7 @@ I optimized this dataset to create a luxembourgish synthetic voice **Luxi** by  
 * The clips with single words have been assembled into samples each with 4 words, separated by commas
 * The clips with noise or wrong pronunciations have been removed
 * The transcriptions of all remaining clips have been manually checked, mistakes corrected, numbers and abbreviations expanded
-* The samples with a standard deviation between the audio- and text-length higher than 0.8 have been removed 
+* The samples with a standard deviation between the audio- and text-length higher than 0.8 have been removed after the final quality check
 
  The result is a new database with 648 samples, called Marylux-648-TTS-Corpus.
  
@@ -84,20 +84,40 @@ Bad audio quality with much noise is a no-go for deep machine learning TTS train
 figure 5    
 ![noise plug-in](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/noise-reduction.png)
 
+Fortunately the original Marylux audio files are of high quality and I was able to discard a few disturbing sounds manually in Audacity during the sound check done for the text correction. 
+
 ### Text Corrections
 To check if the text and audio of the resulting 660 samples are congruent, I used the following tools arrangement on my desktop-PC :    
 
+figure 6     
 ![arrangement](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/tools-arrangement.png)
+ 
+I imported the audio clips into Audacity and looped through the different tracks to listen the speech and to compare it with the text in the `metadata.csv` file, displayed in a text-editor. Some remaining errors have been redressed. At the end the database was ready for a final automatic quality check.
 
+### Quality Check
+The final quality check was done with the notebook [TTS/notebooks/dataset_analysis/AnalyzeDataset.ipynb](https://github.com/mbarnig/TTS/blob/marylux/notebooks/dataset_analysis/AnalyzeDataset.ipynb) provided by [Coqui-ai](https://coqui.ai). The next figure shows the plotted graph of the standard deviation between audio-lengths and character-counts. 
 
-Spectrograms can also be a great help to check the audio quality. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram), version 5. The following figure gives an overview about the features of this software.
+figure 7    
+[std plot]()
+
+For best results with the deep machine learning TTS training a standard-deviation less than 0.8 is recommended. I identified the samples out of scope and analysed the related audio-clips and transcriptions. In most cases the reason for the deviation was obvious. An example is shown below :
+
+figure 8
+[std out of scope]()
+
+Due to the silence between the numerous words separated by commas the audio-length is very high in comparison to the character-count. Spectrograms can be a great help to check the audio quality of samples where the reason of the deviation is not evident. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram), version 5. The following figure gives an overview about the features of this software.
 
 figure 6           
 ![Sonogram 5](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/sonogram-2.png)
 
-Fortunately the original Marylux audio files are of high quality and I was able to discard a few disturbing sounds manually in Audacity during the sound check done for the text correction. 
- 
-### Standard Deviation
-[Coqui-TTS](https://github.com/coqui-ai/TTS/tree/main/notebooks/dataset_analysis) provides several [Jupyter Notebooks](https://jupyter.org) to analyze a new dataset and to find exceptional cases. 
- 
+I removed the following 12 samples of the intermediate MARYLUX-660 corpus :
+
+* abc
+
+The result is a database of 648 luxembourgish samples. An good splitting of this database for machine learning is the following : 
+
+* training list : 640 (optimal for batch sizes of 64, 32, 20, 16, 10, 8, ...)
+* validation list : 8 (optimal for batch sizes of 8, 4, ...)
+
+A list of 6 sentences from the [Norwand-Fable]() is provided for synthesizing tests during the training.
 
