@@ -147,12 +147,12 @@ tensor = [
 In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) or [SAMPA](https://en.wikipedia.org/wiki/SAMPA) for the phonetic notation have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [University of Luxembourg](https://wwwfr.uni.lu).
 
 figure 11
-infolux
+![infolux](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/infolux-transcription.png)
 
 The Luxembourgish Online Dictionary (LOD), maintained by the [Zenter fir d'Lëtzebuerger Sprooch](https://portal.education.lu/zls/) (ZLS), provides phonetic transcriptions for most luxembourgish words.
 
-figure 12
-LOD
+figure 12    
+![LOD](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/lod-housecker.png)
 
 As both the phonemizer- and voice-models are based on deep machine learning with neural networks and tensors, a legitimate question is why doing two sequential trainings to convert letters into phonemes and afterwards to convert phonemes via indices (integers) into audio signals. Why not transforming in one training process graphemes into audio signals ? Most recent TTS models are adopting this option and the resulting speech quality is even better then by using the classic procedure, but more computer performance and more training time is required to get valid results. 
 
@@ -162,7 +162,7 @@ The Marylux-648 dataset can be used for both learning options.
 [eSpeak-NG](https://github.com/espeak-ng/espeak-ng) and [Rhasspy-Gruut](https://github.com/rhasspy/gruut) are two famous open-source phonemizers which are used by numerous TTS projects. A few months ago I developped the code to integrate the [luxembourgish language into eSpeak-NG](https://github.com/mbarnig/espeak-ng-lb). The code was merged into the main eSpeak-NG project with my [Github pull request #1038](https://github.com/espeak-ng/espeak-ng/pull/1038) on November 11, 2021. Now Luxembourgish is the 127th language supported by eSpeak-NG. A luxembourgish voice, based on formant synthesis techniques, is part of my package. The voice is intelligible, but of low quality. I did no sound optimization because my focus was put on the rule-based phonemization front-end process. The eSpeak-NG lb-phonemizer includes a luxembourgish emoji-dictionary which translates some children-emojis into the names of my grand-children. Some animal-graphics are also converted to the related luxembourgish phonetic transcriptions. The next figure shows a sentence which can be handled by eSpeak-NG-lb.
 
 figure 10
-[emojis]()
+![emojis](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/emojis.png)
 
 The integration of the luxembourgish language into the [gruut-phonemizer](https://github.com/mbarnig/gruut-lb) is more recent. My [code to support Luxembourgish](https://github.com/mbarnig/gruut-ipa) was merged into the gruut-ipa repository with my [Github pull request #7](https://github.com/rhasspy/gruut-ipa/pull/7) on November 10, 2021. My main code was merged into the gruut project with my [Github pull request #18](https://github.com/rhasspy/gruut/pull/18) on December 6, 2021.
 
