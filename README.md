@@ -138,12 +138,12 @@ tensor = [
 
 ```   
 ### International Phonetic Alphabet
-In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) or [SAMPA](https://en.wikipedia.org/wiki/SAMPA) for the phonetic notation have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [university of Luxembourg](https://wwwfr.uni.lu).
+In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) or [SAMPA](https://en.wikipedia.org/wiki/SAMPA) for the phonetic notation have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [University of Luxembourg](https://wwwfr.uni.lu).
 
 figure 11
 infolux
 
-The lzs
+The Luxembourgish Online Dictionary (LOD) maintained by the [Zenter fir d'Lëtzebuerger Sprooch](https://portal.education.lu/zls/) (ZLS) provides phonetic transcriptions for most luxembourgish words.
 
 figure 12
 LOD
