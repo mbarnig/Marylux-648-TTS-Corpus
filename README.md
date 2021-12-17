@@ -1,4 +1,4 @@
-# Marylux-640-TTS-Corpus
+# Marylux-648-TTS-Corpus
 
 [Judith Manzoni](https://www.uni-trier.de/universitaet/fachbereiche-faecher/fachbereich-ii/faecher/phonetik/personal/dr-judith-manzoni) recorded in 2014 at Saarland University a multilingual Luxembourgish/French/German speech database for the [MaryTTS project](https://github.com/marytts). The audio data is provided in a single FLAC file, recorded at 48 kHz sampling frequency with 16 bit per sample. The transcriptions are provided in a single YAML file. The data is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
@@ -137,6 +137,20 @@ input =
 tensor = [
 
 ```   
+### International Phonetic Alphabet
+In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) or [SAMPA](https://en.wikipedia.org/wiki/SAMPA) have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [university of Luxembourg](https://wwwfr.uni.lu).
+
+figure 11
+infolux
+
+The lzs
+
+figure 12
+LOD
+
+### Luxembourgish Phonemizers
+
+### Luxembourgish Datasets
 
 
 The result is a database of 648 luxembourgish samples. An good splitting of this database for machine learning is the following : 
