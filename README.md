@@ -154,6 +154,10 @@ The Luxembourgish Online Dictionary (LOD), maintained by the [Zenter fir d'Lëtz
 figure 12
 LOD
 
+As both the phonemizer- and voice-models are based on deep machine learning with neural networks and tensors, a legitimate question is why doing two sequential trainings to convert letters into phonemes and afterwards to convert phonemes via indices (integers) into audio signals. Why not transforming in one training process graphemes into audio signals ? Most recent TTS models are adopting this option and the resulting speech quality is even better then by using the classic procedure, but more computer performance and more training time is required to get valid results. 
+
+The Marylux-648 dataset can be used for both learning options.
+
 ### Luxembourgish Phonemizers
 [eSpeak-NG](https://github.com/espeak-ng/espeak-ng) and [Rhasspy-Gruut](https://github.com/rhasspy/gruut) are two famous open-source phonemizers which are used by numerous TTS projects. A few months ago I developped the code to integrate the [luxembourgish language into eSpeak-NG](https://github.com/mbarnig/espeak-ng-lb). The code was merged into the main eSpeak-NG project with my [Github pull request #1038](https://github.com/espeak-ng/espeak-ng/pull/1038) on November 11, 2021. Now Luxembourgish is the 127th language supported by eSpeak-NG. A luxembourgish voice, based on formant synthesis techniques, is part of my package. The voice is intelligible, but of low quality. I did no sound optimization because my focus was put on the rule-based phonemization front-end process. The eSpeak-NG lb-phonemizer includes a luxembourgish emoji-dictionary which translates some children-emojis into the names of my grand-children. Some animal-graphics are also converted to the related luxembourgish phonetic transcriptions. The next figure shows a sentence which can be handled by eSpeak-NG-lb.
 
@@ -162,17 +166,16 @@ figure 10
 
 The integration of the luxembourgish language into the [gruut-phonemizer](https://github.com/mbarnig/gruut-lb) is more recent. My [code to support Luxembourgish](https://github.com/mbarnig/gruut-ipa) was merged into the gruut-ipa repository with my [Github pull request #7](https://github.com/rhasspy/gruut-ipa/pull/7) on November 10, 2021. My main code was merged into the gruut project with my [Github pull request #18](https://github.com/rhasspy/gruut/pull/18) on December 6, 2021.
 
-The fully support of the luxembourgish language by the big TTS-projects with embedded eSpeak-NG- or Gruut-Phonemizer is only assured when these projects update their code-base to the latest versions of the concerned dependencies. In the mean-time the luxembourgish phonemes must be provided in the external training- and validation files and some hacking is required to feed these files as input to the TTS-models for training.
+The luxembourgish phonemes list used in both phonemizers is the following :
+
+Here is the [associated phonetic luxembourgish dictionary](), based on the [luxembourgish-language ressources](https://github.com/PeterGilles/Luxembourgish-language-resources), provided by Peter Gilles on Github. I did some corrections, modifications and additions.
+
+The fully support of the luxembourgish language by the big TTS-projects with embedded eSpeak-NG- or Gruut-Phonemizer will only be assured when these projects update their code-base to the latest versions of the concerned dependencies. In the mean-time the luxembourgish phonemes must be provided in the external training- and validation files and some hacking is required to feed these files as input to the TTS-models for training.
 
 For this purpose I prepared different Marylux-648 dataset versions which are described in the next chapter.
 
 ### Luxembourgish Datasets
-The result is a database of 648 luxembourgish samples. An good splitting of this database for machine learning is the following : 
-
-* training list : 640 (optimal for batch sizes of 64, 32, 20, 16, 10, 8, ...)
-* validation list : 8 (optimal for batch sizes of 8, 4, ...)
-
-A list of 6 luxembourgish sentences based on the [Aesop's fables](https://en.wikipedia.org/wiki/Aesop%27s_Fables) is provided for synthesizing tests during the training.
+The checked and validated Marylux TTS database contains 648 luxembourgish samples. Additionally a list of 6 luxembourgish sentences, based on the [Aesop's fables](https://en.wikipedia.org/wiki/Aesop%27s_Fables), is provided for synthesizing tests during the training :   
 
 ```        
 1. An der Zäit hunn sech den Nordwand an d’Sonn gestridden, wie vun hinnen zwee wuel méi staark wier, wéi e Wanderer, deen an ee waarme Mantel agepak war, iwwert de Wee koum. 
@@ -181,4 +184,23 @@ A list of 6 luxembourgish sentences based on the [Aesop's fables](https://en.wik
 4. Um Enn huet den Nordwand säi Kampf opginn. 
 5. Dunn huet d’Sonn d’Loft mat hire frëndleche Strale gewiermt, a schonn no kuerzer Zäit huet de Wanderer säi Mantel ausgedoen. 
 6. Do huet den Nordwand missen zouginn, datt d’Sonn vun hinnen zwee dee Stäerkste wier.
-```   
+``` 
+The following archives of the Marylux-648 database are avaible for download in the release section  of the present Github repository.
+
+Archives including audio files sampled with 22050 Hz :
+
+* marylux-648-22.05KHz-graphemes.zip
+* marylux-648-22.05KHz-phonemes.zip
+* marylux-648-22.05KHz-phonemes-ids.zip
+* marylux-648-22.05KHz-phonemes&blanks.zip
+* marylux-648-22.05KHz-phonemes&blanks-ids.zip
+
+Archive including audio files sampled with 16000 Hz :
+* marylux-648-16KHz-graphemes.zip
+
+An good splitting of this database for machine learning is the following : 
+
+* training list : 640 (optimal for batch sizes of 64, 32, 20, 16, 10, 8, ...)
+* validation list : 8 (optimal for batch sizes of 8, 4, ...)
+
+Some batch scripts to download, decompress, shuffles, split and install these archives are stored in the [scripts]() folder.
