@@ -17,10 +17,10 @@ I optimized this dataset to create a luxembourgish synthetic voice **Luxi** by  
 * The length of the audio clips exceeding 10 seconds has been reduced by splitting and renaming the samples 
 * The clips with single words have been assembled into samples each with 4 words, separated by commas
 * The clips with noise or wrong pronunciations have been removed
-* The samples with a standard deviation between the audio- and text-length higher than 0.8 have been removed
 * The transcriptions of all remaining clips have been manually checked, mistakes corrected, numbers and abbreviations expanded
+* The samples with a standard deviation between the audio- and text-length higher than 0.8 have been removed 
 
- The result is a new database with 640 samples, called Marylux-640-TTS-Corpus.
+ The result is a new database with 648 samples, called Marylux-648-TTS-Corpus.
  
  The different transformation steps are described in detail in the next chapter.
  
@@ -84,6 +84,11 @@ Bad audio quality with much noise is a no-go for deep machine learning TTS train
 figure 5    
 ![noise plug-in](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/noise-reduction.png)
 
+### Text Corrections
+To check if the text and audio of the resulting 660 samples are congruent, I used the following tools arrangement on my desktop-PC :    
+
+![arrangement](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/tools-arrangement.png)
+
 
 Spectrograms can also be a great help to check the audio quality. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram), version 5. The following figure gives an overview about the features of this software.
 
@@ -95,6 +100,4 @@ Fortunately the original Marylux audio files are of high quality and I was able 
 ### Standard Deviation
 [Coqui-TTS](https://github.com/coqui-ai/TTS/tree/main/notebooks/dataset_analysis) provides several [Jupyter Notebooks](https://jupyter.org) to analyze a new dataset and to find exceptional cases. 
  
-### Text Corrections
 
-![arrangement](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/tools-arrangement.png)
