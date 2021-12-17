@@ -110,7 +110,7 @@ Due to the silence between the single words, separated by commas, the audio-leng
 figure 9           
 ![Sonogram 5](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/sonogram-2.png)
 
-To assure a high quality, I removed the following 12 samples of the intermediate MARYLUX-660 corpus, based on the measurment results :
+To assure a high quality, I removed the following 12 samples of the intermediate MARYLUX-660 corpus, based on the measurement results :
 
 * lb-wiki-0040
 * lb-wiki-0109
@@ -147,7 +147,7 @@ tensor = [
 
 ```   
 ### International Phonetic Alphabet
-In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) or [SAMPA](https://en.wikipedia.org/wiki/SAMPA) for the phonetic notation have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [University of Luxembourg](https://wwwfr.uni.lu).
+In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards for the phonetic notation, for example [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) and [SAMPA](https://en.wikipedia.org/wiki/SAMPA), have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [University of Luxembourg](https://wwwfr.uni.lu).
 
 figure 11    
 ![infolux](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/infolux-transcription.png)
@@ -157,7 +157,7 @@ The Luxembourgish Online Dictionary (LOD), maintained by the [Zenter fir d'Lëtz
 figure 12    
 ![LOD](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/lod-housecker.png)
 
-As both the phonemizer- and voice-models are based on deep machine learning with neural networks and tensors, a legitimate question is why doing two sequential trainings to convert letters into phonemes and afterwards to convert phonemes via indices (integers) into audio signals. Why not transforming in one training process graphemes into audio signals ? Most recent TTS models are adopting this option and the resulting speech quality is even better then by using the classic procedure, but more computer performance and more training time is required to get valid results. 
+As both the phonemizer- and voice-models are based on deep machine learning with neural networks and tensors, a legitimate question is why doing two sequential trainings to convert letters into phonemes and afterwards convert phonemes via indices (integers) into audio signals. Why not transforming in one training process graphemes into audio signals ? Most recent TTS models are adopting this option and the resulting speech quality is even better then by using the classic procedure, but more computer performance and more training time is required to get valid results. 
 
 The Marylux-648 dataset can be used for both learning options.
 
