@@ -116,8 +116,26 @@ I removed the following 12 samples of the intermediate MARYLUX-660 corpus :
 
 The following figures shows the plotted results for the validated Marylux-database with 648 samples.
 
-## Phonemization
-A `deep machine learning TTS model` can be trained with characters (graphemes) or with phonemes. 
+## Dataset Phonemization
+A `deep machine learning TTS model` is trained with tensors, a sequence of integers created by converting the symbols from the samples to indices. The symbols can be latin characters, arabic, greek or russian letters, japanese or chinese idiograms and logograms, phonemes, or even emoji's, and much more. 
+
+figure 10
+[emojis]()
+
+The conversion is commonly done by calculating the position (index) of a symbol, extracted from the input-sample, in a predefined symbol-list. Some examples are shown below :
+
+```    
+symbols = [
+
+input =
+
+tensor = [
+
+input = 
+
+tensor = [
+
+```   
 
 
 The result is a database of 648 luxembourgish samples. An good splitting of this database for machine learning is the following : 
