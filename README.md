@@ -177,6 +177,20 @@ The fully support of the luxembourgish language by the big TTS-projects with emb
 
 For this purpose I prepared different Marylux-648 dataset versions which are described in the next chapter.
 
+### Text Format
+The reference for the text format of the Marylux transcription file is the public domain dataset [LJSpeech](https://keithito.com/LJ-Speech-Dataset/). All text samples are assembled in one file called `metadata.csv`. Each row contains three columns separated by the pipe ` | ` symbol :  
+
+* first column : filename of the corresponding audio-file, without extension
+* second column : raw text with uppercase and lowercase characters, numbers, abbreviations etc
+* third column : cleaned text with lowercase characters, expanded numbers and abbreviations, or phonemes, or phonemes-ids
+
+Here are some simple examples : 
+
+```
+marylux_lb-wiki-xxxx|
+marylux_lb-wiki-yyyy|
+marylux_lb-wiki-zzzz| 
+```   
 ### Luxembourgish Datasets
 The checked and validated Marylux TTS database contains 648 luxembourgish samples. Additionally a list of 6 luxembourgish sentences, based on the [Aesop's fables](https://en.wikipedia.org/wiki/Aesop%27s_Fables), is provided for synthesizing tests during the training :   
 
