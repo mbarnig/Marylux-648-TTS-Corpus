@@ -110,7 +110,7 @@ Due to the silence between the single words, separated by commas, the audio-leng
 figure 9           
 ![Sonogram 5](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/sonogram-2.png)
 
-I removed the following 12 samples of the intermediate MARYLUX-660 corpus :
+To assure a high quality, I removed the following 12 samples of the intermediate MARYLUX-660 corpus, based on the measurment results :
 
 * lb-wiki-0040
 * lb-wiki-0109
@@ -129,12 +129,7 @@ The following figures shows the plotted results for the validated Marylux-databa
 
 ## Dataset Phonemization
 ### Tensors
-A `deep machine learning TTS model` is trained with tensors, a sequence of integers created by converting the symbols from the samples to indices. The symbols can be latin characters, arabic, greek or russian letters, japanese or chinese idiograms and logograms, phonemes, or even emoji's, and much more. 
-
-figure 10
-[emojis]()
-
-The conversion is commonly done by calculating the position (index) of a symbol, extracted from the input-sample, in a predefined symbol-list. Some examples are shown below :
+A `deep machine learning TTS model` is trained with tensors, a sequence of integers created by converting the symbols from the samples to indices. The symbols can be latin characters, arabic, greek or russian letters, japanese or chinese idiograms and logograms, phonemes, or even emoji's, and much more. The conversion is commonly done by calculating the position (index) of a symbol, extracted from the input-sample, in a predefined symbol-list. Some examples are shown below :
 
 ```    
 symbols = [
@@ -154,12 +149,17 @@ In the past an alphabetic system of phonetic notation has been used for TTS voic
 figure 11
 infolux
 
-The Luxembourgish Online Dictionary (LOD) maintained by the [Zenter fir d'Lëtzebuerger Sprooch](https://portal.education.lu/zls/) (ZLS) provides phonetic transcriptions for most luxembourgish words.
+The Luxembourgish Online Dictionary (LOD), maintained by the [Zenter fir d'Lëtzebuerger Sprooch](https://portal.education.lu/zls/) (ZLS), provides phonetic transcriptions for most luxembourgish words.
 
 figure 12
 LOD
 
 ### Luxembourgish Phonemizers
+[eSpeak-NG](https://github.com/espeak-ng/espeak-ng) and [Rhasspy-Gruut](https://github.com/rhasspy/gruut) are two famous open-source phonemizers which are used by numerous TTS projects. A few months ago I developped the code to integrate the [luxembourgish language into eSpeak-NG](https://github.com/mbarnig/espeak-ng-lb). The code was merged into the main project with my [Github pull request #1038](https://github.com/espeak-ng/espeak-ng/pull/1038) on November 11, 2021. Now Luxembourgish is the 127th language supported by espeak-NG. A luxembourgish voice, based on formant synthesis techniques, is part of my package. The voice is intelligible, but of low quality. I did no sound optimization because my focus was put on the rule-based phonemization front-end process. The eSpeak-NG lb-phonemizer includes a luxembourgish emoji-dictionary which translates some children-emojis into the names of my grand-children. Some animal-graphics are also converted to
+
+
+figure 10
+[emojis]()
 
 ### Luxembourgish Datasets
 
