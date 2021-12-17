@@ -171,6 +171,10 @@ The integration of the luxembourgish language into the [gruut-phonemizer](https:
 
 The luxembourgish phonemes list used in both phonemizers is the following :
 
+index | phoneme | example    | index | phoneme | example   
+------|---------|------------|-------|---------|-----------
+1     |  i:     | B[ii]scht  | 31    | S       | [Sch]ong
+
 Here is the [associated phonetic luxembourgish dictionary](), based on the [luxembourgish-language ressources](https://github.com/PeterGilles/Luxembourgish-language-resources), provided by Peter Gilles on Github. I did some corrections, modifications and additions.
 
 The fully support of the luxembourgish language by the big TTS-projects with embedded eSpeak-NG- or Gruut-Phonemizer will only be assured when these projects update their code-base to the latest versions of the concerned dependencies. In the mean-time the luxembourgish phonemes must be provided in the external training- and validation files and some hacking is required to feed these files as input to the TTS-models for training.
