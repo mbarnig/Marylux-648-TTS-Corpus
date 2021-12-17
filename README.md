@@ -175,7 +175,7 @@ Here is the [associated phonetic luxembourgish dictionary](), based on the [luxe
 
 The fully support of the luxembourgish language by the big TTS-projects with embedded eSpeak-NG- or Gruut-Phonemizer will only be assured when these projects update their code-base to the latest versions of the concerned dependencies. In the mean-time the luxembourgish phonemes must be provided in the external training- and validation files and some hacking is required to feed these files as input to the TTS-models for training.
 
-For this purpose I prepared different Marylux-648 dataset versions which are described in the next chapter.
+For this purpose I prepared different Marylux-648 dataset versions which are described in the next chapters.
 
 ### Text Format
 The reference for the text format of the Marylux transcription file is the public domain dataset [LJSpeech](https://keithito.com/LJ-Speech-Dataset/). All text samples are assembled in one file called `metadata.csv`. Each row contains three columns, separated by the pipe ` | ` symbol :  
@@ -191,7 +191,7 @@ marylux_lb-wiki-xxxx|
 marylux_lb-wiki-yyyy|
 marylux_lb-wiki-zzzz| 
 ```   
-### Luxembourgish Datasets
+### Marylux-648 Dataset Versions
 The checked and validated Marylux TTS database contains 648 luxembourgish samples. Additionally a list of 6 luxembourgish sentences, based on the [Aesop's fables](https://en.wikipedia.org/wiki/Aesop%27s_Fables), is provided for synthesizing tests during the training :   
 
 ```        
