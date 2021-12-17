@@ -89,7 +89,7 @@ Fortunately the original Marylux audio files are of high quality and I was able 
 ### Text Corrections
 To check if the text and audio of the resulting 660 samples are congruent, I used the following tools arrangement on my desktop-PC :    
 
-figure 6     
+figure 6      
 ![arrangement](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/tools-arrangement.png)
  
 I imported the audio clips into Audacity and looped through the different tracks to listen the speech and to compare it with the text in the `metadata.csv` file, displayed in a text-editor. Some remaining errors have been redressed. At the end the database was ready for a final automatic quality check.
@@ -98,12 +98,12 @@ I imported the audio clips into Audacity and looped through the different tracks
 The final quality check was done with the notebook [TTS/notebooks/dataset_analysis/AnalyzeDataset.ipynb](https://github.com/mbarnig/TTS/blob/marylux/notebooks/dataset_analysis/AnalyzeDataset.ipynb) provided by [Coqui-ai](https://coqui.ai). This program checks if all wav files listed in the `metadata.csv` file are available and unique (no duplicates), calculates mean- and median-values for audio- and text-lengths, counts the number of words (...) in the dataset and plots the results. The next figure shows the plotted graph of the standard deviation between audio-lengths and character-counts. 
 
 figure 7    
-[std plot]()
+[std plot](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/plot-std-1.png)
 
 For best results with the `deep machine learning TTS training` a standard-deviation less than 0.8 is recommended. I identified the samples out of scope and analysed the related audio-clips and transcriptions. In most cases the reason for the deviation was obvious. An example is shown below :
 
 figure 8    
-[std out of scope]()
+[std out of scope](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/std-out-of-scope.png)
 
 Due to the silence between the single words, separated by commas, the audio-length is very high in comparison to the character-count. Spectrograms can be a great help to check the audio quality of samples where the reason of the deviation is not evident. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram), version 5. The following figure gives an overview about the features of this software.
 
@@ -126,6 +126,9 @@ To assure a high quality, I removed the following 12 samples of the intermediate
 * lb-wiki-1369
 
 The following figures shows the plotted results for the validated Marylux-database with 648 samples.
+
+figure 10    
+![quality check](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/plot-quality.png)
 
 ## Dataset Phonemization
 ### Tensors
@@ -161,7 +164,7 @@ The Marylux-648 dataset can be used for both learning options.
 ### Luxembourgish Phonemizers
 [eSpeak-NG](https://github.com/espeak-ng/espeak-ng) and [Rhasspy-Gruut](https://github.com/rhasspy/gruut) are two famous open-source phonemizers which are used by numerous TTS projects. A few months ago I developped the code to integrate the [luxembourgish language into eSpeak-NG](https://github.com/mbarnig/espeak-ng-lb). The code was merged into the main eSpeak-NG project with my [Github pull request #1038](https://github.com/espeak-ng/espeak-ng/pull/1038) on November 11, 2021. Now Luxembourgish is the 127th language supported by eSpeak-NG. A luxembourgish voice, based on formant synthesis techniques, is part of my package. The voice is intelligible, but of low quality. I did no sound optimization because my focus was put on the rule-based phonemization front-end process. The eSpeak-NG lb-phonemizer includes a luxembourgish emoji-dictionary which translates some children-emojis into the names of my grand-children. Some animal-graphics are also converted to the related luxembourgish phonetic transcriptions. The next figure shows a sentence which can be handled by eSpeak-NG-lb.
 
-figure 10     
+figure 13     
 ![emojis](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/emojis.png)
 
 The integration of the luxembourgish language into the [gruut-phonemizer](https://github.com/mbarnig/gruut-lb) is more recent. My [code to support Luxembourgish](https://github.com/mbarnig/gruut-ipa) was merged into the gruut-ipa repository with my [Github pull request #7](https://github.com/rhasspy/gruut-ipa/pull/7) on November 10, 2021. My main code was merged into the gruut project with my [Github pull request #18](https://github.com/rhasspy/gruut/pull/18) on December 6, 2021.
