@@ -112,7 +112,18 @@ figure 9
 
 I removed the following 12 samples of the intermediate MARYLUX-660 corpus :
 
-* abc
+* lb-wiki-0040
+* lb-wiki-0109
+* lb-wiki-0124
+* lb-wiki-0231
+* lb-wiki-0235
+* lb-wiki-0266
+* lb-wiki-0391
+* lb-wiki-0438
+* lb-wiki-0556
+* lb-wiki-0569
+* lb-wiki-1047
+* lb-wiki-1369
 
 The following figures shows the plotted results for the validated Marylux-database with 648 samples.
 
