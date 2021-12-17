@@ -178,7 +178,7 @@ The fully support of the luxembourgish language by the big TTS-projects with emb
 For this purpose I prepared different Marylux-648 dataset versions which are described in the next chapter.
 
 ### Text Format
-The reference for the text format of the Marylux transcription file is the public domain dataset [LJSpeech](https://keithito.com/LJ-Speech-Dataset/). All text samples are assembled in one file called `metadata.csv`. Each row contains three columns separated by the pipe ` | ` symbol :  
+The reference for the text format of the Marylux transcription file is the public domain dataset [LJSpeech](https://keithito.com/LJ-Speech-Dataset/). All text samples are assembled in one file called `metadata.csv`. Each row contains three columns, separated by the pipe ` | ` symbol :  
 
 * first column : filename of the corresponding audio-file, without extension
 * second column : raw text with uppercase and lowercase characters, numbers, abbreviations etc
