@@ -100,12 +100,12 @@ The final quality check was done with the notebook [TTS/notebooks/dataset_analys
 figure 7    
 [std plot]()
 
-For best results with the deep machine learning TTS training a standard-deviation less than 0.8 is recommended. I identified the samples out of scope and analysed the related audio-clips and transcriptions. In most cases the reason for the deviation was obvious. An example is shown below :
+For best results with the `deep machine learning TTS training` a standard-deviation less than 0.8 is recommended. I identified the samples out of scope and analysed the related audio-clips and transcriptions. In most cases the reason for the deviation was obvious. An example is shown below :
 
 figure 8    
 [std out of scope]()
 
-Due to the silence between the numerous words separated by commas the audio-length is very high in comparison to the character-count. Spectrograms can be a great help to check the audio quality of samples where the reason of the deviation is not evident. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram), version 5. The following figure gives an overview about the features of this software.
+Due to the silence between the single words, separated by commas, the audio-length is very high in comparison to the character-count. Spectrograms can be a great help to check the audio quality of samples where the reason of the deviation is not evident. A great tool is [Sonogram Visible Speech](https://github.com/Christoph-Lauer/Sonogram), version 5. The following figure gives an overview about the features of this software.
 
 figure 9           
 ![Sonogram 5](https://github.com/mbarnig/Marylux-640-TTS-Corpus/blob/main/pictures/sonogram-2.png)
