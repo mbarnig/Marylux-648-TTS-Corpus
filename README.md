@@ -188,32 +188,24 @@ oː     | spr[oo]ch |           |          |             |
 u      | g[u]tt    |           |          |             |
 uː     | d[uu]scht |           |          |             |
 
-consonants     | words     |
----------------|-----------|
-**Nasals**                 |
-m              | [m]a[mm]  |
-n              | ma[nn]    |
-ŋ              | ke[ng]    |
-**Plosives**               |
-p              | [p]aken   |
-b              | [b]aken   |
-t              | blu[tt]   |
-d              | [d]äiwel  |
-k              | [k]eess   |
-g              | [g]eess   |
-
-
-
-
-
-
-
-
-
-
-
-
-
+consonants       | words     | consonants     | words      
+-----------------|-----------|----------------|------------
+**Nasals**       |           |**Affricates**  | 
+m                | [m]a[mm]  | ʦ schwä[tz]en  |
+n                | ma[nn]    | dʒ bu[dg]et    |
+ŋ                | ke[ng]    |**Fricatives**  |
+**Plosives**     |           | f              | [f]ësch
+p                | [p]aken   | v              | [v]akanz
+b                | [b]aken   | w              | sch[w]aarz
+t                | blu[tt]   | s              | taa[ss]
+d                | [d]äiwel  | z              | [s]ummer
+k                | [k]eess   | ʃ              | bii[sch]t
+g                | [g]eess   | ʒ              | pro[j]et
+**Approximants** |           | ɕ              | lii[ch]t
+l                | [l]oft    | ʁ              | ku[g]el
+j                | [j]o      | ʑ              | spi[g]el
+**Trills**       |           | h              | [h]ei
+ʀ                | [r]ou     |                |
 
 Here is the [associated phonetic luxembourgish dictionary](), based on the [luxembourgish-language ressources](https://github.com/PeterGilles/Luxembourgish-language-resources), provided by Peter Gilles on Github. I did some corrections, modifications and additions.
 
