@@ -144,7 +144,7 @@ input_phonemes = "də noʀtvɑnt ɑn dzon."
 tensor = [29 80 64 39 40 87 45 47 77 39 29 64 77 39 29 51 40 39 58]
 
 input_phonemes_with_blanks = "_d_ə_ _n_o_ʀ_t_v_ɑ_n_t_ _ɑ_n_ _d_z_o_n_._" 
-tensor = tensor = [60 29 60 80 60 64 60 39 60 40 60 87 60 45 60 47 60 77 60 39 60 29 60 64 60 77 60 39 60 29 60 51 60 40 60 39 60 58 60]
+tensor = tensor = [29 60 80 60 64 60 39 60 40 60 87 60 45 60 47 60 77 60 39 60 29 60 64 60 77 60 39 60 29 60 51 60 40 60 39 60 58]
 ```   
 ### International Phonetic Alphabet
 In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards for the phonetic notation, for example [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) and [SAMPA](https://en.wikipedia.org/wiki/SAMPA), have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [University of Luxembourg](https://wwwfr.uni.lu).
@@ -224,9 +224,10 @@ The reference for the text format of the Marylux transcription file is the publi
 Here are some simple examples : 
 
 ```
-marylux_lb-wiki-xxxx|
-marylux_lb-wiki-yyyy|
-marylux_lb-wiki-zzzz| 
+marylux_lb-wiki-0473|Dës éischt Versioun hat nëmmen 3 Strofen.|dës éischt versioun hat nëmmen dräi strofen.
+marylux_lb-wiki-0007|D'Bréck hat 4 Béi mat Feldwäite vun 18,33 m.|dbʀæk haːt fɜɪʁ bɜɪ mɑ feːltvæːɪtə fun uəɕtʦeɳ komaː dʀæːɪɑndʀəsəɕ meːtʁ.
+marylux_lb-wiki-0140|De Rouscht ass eng Uertschaft an der Gemeng Biissen.|d_ə_ _ʀ_əʊ_ʃ_t_ _ɑ_s_ _æ_ɳ_ _u_ʁ_tʃ_ɑ_f_t_ _ɑ_n_ _d_ʁ_ _g_ə_m_æ_ɳ_ _b_iː_s_ə_n_.
+marylux_lb-wiki-0171|Der Kore hire Papp Zeus hat sech a si verléift.|14 15 28 21 25 28 15 18 19 28 15 26 11 26 26 36 15 31 29 18 11 30 29 15 13 18 11 29 19 32 15 28 22 44 19 16 30 8
 ```   
 ### Marylux-648 Dataset Versions
 The checked and validated Marylux TTS database contains 648 luxembourgish samples. Additionally a list of 6 luxembourgish sentences, based on the [Aesop's fables](https://en.wikipedia.org/wiki/Aesop%27s_Fables), is provided for synthesizing tests during the training :   
