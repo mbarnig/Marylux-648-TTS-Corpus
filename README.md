@@ -171,7 +171,7 @@ The integration of the luxembourgish language into the [gruut-phonemizer](https:
 
 The luxembourgish phonemes list used in both phonemizers is the following :
 
-vowels | examples  | diphtongs | examples | monophtongs | from loanwords
+vowels | words     | diphtongs | words    | monophtongs | from loanwords
 -------|-----------|-----------|----------|-------------|---------------
 ɑ      | k[a]pp    | æːɪ       | z[äi]t   | y           | conj[u]gaisoun
 aː     | k[a]p     | ɑʊ        | [au]to   | y:          | s[ü]den
@@ -187,6 +187,7 @@ o      | spr[o]ch  |           |          |             |
 oː     | spr[oo]ch |           |          |             |
 u      | g[u]tt    |           |          |             |
 uː     | d[uu]scht |           |          |             |
+-------|-----------|-----------|----------|-------------|
 
 
 
