@@ -191,8 +191,8 @@ uː     | d[uu]scht |           |          |             |
 consonants       | words     | consonants     | words      
 -----------------|-----------|----------------|------------
 **Nasals**       |           |**Affricates**  | 
-m                | [m]a[mm]  | ʦ schwä[tz]en  |
-n                | ma[nn]    | dʒ bu[dg]et    |
+m                | [m]a[mm]  | ʦ              | schwä[tz]en
+n                | ma[nn]    | dʒ             | bu[dg]et
 ŋ                | ke[ng]    |**Fricatives**  |
 **Plosives**     |           | f              | [f]ësch
 p                | [p]aken   | v              | [v]akanz
