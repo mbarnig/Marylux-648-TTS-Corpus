@@ -135,16 +135,16 @@ figure 10
 A `deep machine learning TTS model` is trained with tensors, a sequence of integers created by converting the symbols from the samples to indices. The symbols can be latin characters, arabic, greek or russian letters, japanese or chinese idiograms and logograms, phonemes, or even emoji's, and much more. The conversion is commonly done by calculating the position (index) of a symbol, extracted from the input-sample, in a predefined symbol-list. Some examples are shown below :
 
 ```    
-symbols = [
+93_symbols = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!'(),-.:_;? #äöüïëéèêäâç@ɑɛæəɜɪʊœɛ̃ŋʀʦʒɕʑʁ"
 
-input =
+input_letters = "De Nordwand an d'Sonn."    
+tensor = [3 30 64 13 40 43 29 48 26 39 29 64 26 39 64 29 53 18 40 39 39 58]    
+ 
+input_phonemes = "də noʀtvɑnt ɑn dzon."    
+tensor = [29 80 64 39 40 87 45 47 77 39 29 64 77 39 29 51 40 39 58]
 
-tensor = [
-
-input = 
-
-tensor = [
-
+input_phonemes_with_blanks = "_d_ə_ _n_o_ʀ_t_v_ɑ_n_t_ _ɑ_n_ _d_z_o_n_._" 
+tensor = tensor = [60 29 60 80 60 64 60 39 60 40 60 87 60 45 60 47 60 77 60 39 60 29 60 64 60 77 60 39 60 29 60 51 60 40 60 39 60 58 60]
 ```   
 ### International Phonetic Alphabet
 In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards for the phonetic notation, for example [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) and [SAMPA](https://en.wikipedia.org/wiki/SAMPA), have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [University of Luxembourg](https://wwwfr.uni.lu).
