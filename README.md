@@ -171,22 +171,27 @@ The integration of the luxembourgish language into the [gruut-phonemizer](https:
 
 The luxembourgish phonemes list used in both phonemizers is the following :
 
-vowels | examples | diphtongs | examples |
--------|----------|-----------|-----------
-ɑ      | k[a]pp   | æːɪ       | z[äi]t
-aː     |k[a]p     | ɑʊ        | [au]to
-ɛː     |st[ä]ren  | æːʊ       | r[au]m
-e      |m[é]ck    | ɑɪ        | l[ei]t
-æ      |h[e]ll    | ɜɪ        | fr[éi]
-eː     |k[ee]ss   | oɪ        | [eu]ro
-ə      |n[e]t     | oɪ        | [eu]ro
-ɐ      |kann[er]  | iə        | h[ie]n
-i      |m[i]dd    | əʊ        | sch[ou]l
-iː     |l[ii]cht  | uə        | b[ue]dem
-o      |spr[o]ch  |           |
-oː     |spr[oo]ch |           |
-u      |g[u]tt    |           |
-uː     |d[uu]scht |           |
+vowels | examples  | diphtongs | examples | monophtongs | from loanwords
+-------|-----------|-----------|----------|-------------|---------------
+ɑ      | k[a]pp    | æːɪ       | z[äi]t   | y           | conj[u]gaisoun
+aː     | k[a]p     | ɑʊ        | [au]to   | y:          | s[ü]den
+ɛː     | st[ä]ren  | æːʊ       | r[au]m   | ãː          | restaur[ant]
+e      | m[é]ck    | ɑɪ        | l[ei]t   | õː          | sais[on]
+æ      | h[e]ll    | ɜɪ        | fr[éi]   | ɛ̃ː          | cous[in]
+eː     | k[ee]ss   | oɪ        | [eu]ro   | œː          | interi[eu]r
+ə      | n[e]t     | oɪ        | [eu]ro   |             |
+ɐ      | kann[er]  | iə        | h[ie]n   |             |
+i      | m[i]dd    | əʊ        | sch[ou]l |             |
+iː     | l[ii]cht  | uə        | b[ue]dem |             |
+o      | spr[o]ch  |           |          |             |
+oː     | spr[oo]ch |           |          |             |
+u      | g[u]tt    |           |          |             |
+uː     | d[uu]scht |           |          |             |
+
+
+
+
+
 
 
 
