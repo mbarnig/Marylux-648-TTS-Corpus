@@ -176,7 +176,7 @@ vowels | words     | diphtongs | words    | monophtongs | from loanwords
 ɑ      | k[a]pp    | æːɪ       | z[äi]t   | y           | conj[u]gaisoun
 aː     | k[a]p     | ɑʊ        | [au]to   | y:          | s[ü]den
 ɛː     | st[ä]ren  | æːʊ       | r[au]m   | ãː          | restaur[ant]
-e      | m[é]ck    | ɑɪ        | l[ei]t   | õː          | sais[on]
+https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/phonemes/LOD-lexicon.csve      | m[é]ck    | ɑɪ        | l[ei]t   | õː          | sais[on]
 æ      | h[e]ll    | ɜɪ        | fr[éi]   | ɛ̃ː          | cous[in]
 eː     | k[ee]ss   | oɪ        | [eu]ro   | œː          | interi[eu]r
 ə      | n[e]t     | iə        | h[ie]n   |             |
@@ -208,7 +208,7 @@ j                  | [j]o      | ʑ                      | spi[g]el
 **Trills**         |           | h                      | [h]ei
 ʀ                  | [r]ou     |                        |
 
-Here is the [associated phonetic luxembourgish dictionary](), based on the [luxembourgish-language ressources](https://github.com/PeterGilles/Luxembourgish-language-resources), provided by Peter Gilles on Github. I did some corrections, modifications and additions.
+Here is the [associated phonetic luxembourgish dictionary](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/phonemes/LOD-lexicon.csv), based on the [luxembourgish-language ressources](https://github.com/PeterGilles/Luxembourgish-language-resources), provided by Peter Gilles on Github. I did some corrections, modifications and additions.
 
 The fully support of the luxembourgish language by the big TTS-projects with embedded eSpeak-NG- or Gruut-Phonemizer will only be assured when these projects update their code-base to the latest versions of the concerned dependencies. In the mean-time the luxembourgish phonemes must be provided in the external training- and validation files and some hacking is required to feed these files as input to the TTS-models for training.
 
