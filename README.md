@@ -188,12 +188,13 @@ oː     | spr[oo]ch |           |          |             |
 u      | g[u]tt    |           |          |             |
 uː     | d[uu]scht |           |          |             |
 
+
 consonants         | words     | consonants             | words      
 -------------------|-----------|------------------------|------------
-**Nasals**         |           |**Affricates**          | 
+**Nasals**         |           | **Affricates**         | 
 m                  | [m]a[mm]  | ʦ                      | schwä[tz]en
 n                  | ma[nn]    | dʒ                     | bu[dg]et
-ŋ                  | ke[ng]    |**Fricatives**          |
+ŋ                  | ke[ng]    | **Fricatives**         |
 **Plosives**       |           | f                      | [f]ësch
 p                  | [p]aken   | v                      | [v]akanz
 b                  | [b]aken   | w                      | sch[w]aarz
