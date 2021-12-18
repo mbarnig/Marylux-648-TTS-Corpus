@@ -179,10 +179,10 @@ aː     | k[a]p     | ɑʊ        | [au]to   | y:          | s[ü]den
 e      | m[é]ck    | ɑɪ        | l[ei]t   | õː          | sais[on]
 æ      | h[e]ll    | ɜɪ        | fr[éi]   | ɛ̃ː          | cous[in]
 eː     | k[ee]ss   | oɪ        | [eu]ro   | œː          | interi[eu]r
-ə      | n[e]t     | oɪ        | [eu]ro   |             |
-ɐ      | kann[er]  | iə        | h[ie]n   |             |
-i      | m[i]dd    | əʊ        | sch[ou]l |             |
-iː     | l[ii]cht  | uə        | b[ue]dem |             |
+ə      | n[e]t     | oɪ        | h[ie]n   |             |
+ɐ      | kann[er]  | iə        | sch[ou]l |             |
+i      | m[i]dd    | əʊ        | b[ue]dem |             |
+iː     | l[ii]cht  | uə        |          |             |
 o      | spr[o]ch  |           |          |             |
 oː     | spr[oo]ch |           |          |             |
 u      | g[u]tt    |           |          |             |
