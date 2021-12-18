@@ -176,7 +176,7 @@ vowels | words     | diphtongs | words    | monophtongs | from loanwords
 ɑ      | k[a]pp    | æːɪ       | z[äi]t   | y           | conj[u]gaisoun
 aː     | k[a]p     | ɑʊ        | [au]to   | y:          | s[ü]den
 ɛː     | st[ä]ren  | æːʊ       | r[au]m   | ãː          | restaur[ant]
-https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/phonemes/LOD-lexicon.csve      | m[é]ck    | ɑɪ        | l[ei]t   | õː          | sais[on]
+e      | m[é]ck    | ɑɪ        | l[ei]t   | õː          | sais[on]
 æ      | h[e]ll    | ɜɪ        | fr[éi]   | ɛ̃ː          | cous[in]
 eː     | k[ee]ss   | oɪ        | [eu]ro   | œː          | interi[eu]r
 ə      | n[e]t     | iə        | h[ie]n   |             |
