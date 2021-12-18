@@ -259,4 +259,4 @@ An good splitting of this database for machine learning is the following :
 * training list : 640 (optimal for batch sizes of 64, 32, 20, 16, 10, 8, ...)
 * validation list : 8 (optimal for batch sizes of 8, 4, ...)
 
-Some batch scripts to download, decompress, shuffles, split and install these archives are stored in the [scripts]() folder.
+Some batch scripts to download, decompress, shuffles, split and install these archives are stored in the [scripts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/tree/main/scripts) folder.
