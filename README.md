@@ -171,9 +171,32 @@ The integration of the luxembourgish language into the [gruut-phonemizer](https:
 
 The luxembourgish phonemes list used in both phonemizers is the following :
 
-index | phoneme | example    | index | phoneme | example   
-------|---------|------------|-------|---------|-----------
-1     |  i:     | B[ii]scht  | 31    | S       | [Sch]ong
+vowels | examples | diphtongs | examples |
+-------|----------|-----------|-----------
+ɑ      | k[a]pp   | æːɪ       | z[äi]t
+aː     |k[a]p     | ɑʊ        | [au]to
+ɛː     |st[ä]ren  | æːʊ       | r[au]m
+e      |m[é]ck    | ɑɪ        | l[ei]t
+æ      |h[e]ll    | ɜɪ        | fr[éi]
+eː     |k[ee]ss   | oɪ        | [eu]ro
+ə      |n[e]t     | oɪ        | [eu]ro
+ɐ      |kann[er]  | iə        | h[ie]n
+i      |m[i]dd    | əʊ        | sch[ou]l
+iː     |l[ii]cht  | uə        | b[ue]dem
+o      |spr[o]ch  |           |
+oː     |spr[oo]ch |           |
+u      |g[u]tt    |           |
+uː     |d[uu]scht |           |
+
+
+
+
+
+
+
+
+
+
 
 Here is the [associated phonetic luxembourgish dictionary](), based on the [luxembourgish-language ressources](https://github.com/PeterGilles/Luxembourgish-language-resources), provided by Peter Gilles on Github. I did some corrections, modifications and additions.
 
