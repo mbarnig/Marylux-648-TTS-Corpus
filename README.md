@@ -190,11 +190,11 @@ uː     | d[uu]scht |           |          |             |
 
 consonants     | words     |
 ---------------|-----------|
-**Nasals**     |           |
+**Nasals**                 |
 m              | [m]a[mm]  |
 n              | ma[nn]    |
 ŋ              | ke[ng]    |
-**Plosives**   |           |
+**Plosives**               |
 p              | [p]aken   |
 b              | [b]aken   |
 t              | blu[tt]   |
