@@ -187,9 +187,20 @@ o      | spr[o]ch  |           |          |             |
 oː     | spr[oo]ch |           |          |             |
 u      | g[u]tt    |           |          |             |
 uː     | d[uu]scht |           |          |             |
--------|-----------|-----------|----------|-------------|
 
-
+consonants     | words     |
+---------------|-----------|
+**Nasals**     |           |
+m              | [m]a[mm]  |
+n              | ma[nn]    |
+ŋ              | ke[ng]    |
+**Plosives**   |           |
+p              | [p]aken   |
+b              | [b]aken   |
+t              | blu[tt]   |
+d              | [d]äiwel  |
+k              | [k]eess   |
+g              | [g]eess   |
 
 
 
