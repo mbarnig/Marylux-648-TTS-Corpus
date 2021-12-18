@@ -169,7 +169,7 @@ figure 13
 
 The integration of the luxembourgish language into the [gruut-phonemizer](https://github.com/mbarnig/gruut-lb) is more recent. My [code to support Luxembourgish](https://github.com/mbarnig/gruut-ipa) was merged into the gruut-ipa repository with my [Github pull request #7](https://github.com/rhasspy/gruut-ipa/pull/7) on November 10, 2021. My main code was merged into the gruut project with my [Github pull request #18](https://github.com/rhasspy/gruut/pull/18) on December 6, 2021.
 
-The luxembourgish phonemes list used in both phonemizers is the following :
+The [luxembourgish phonemes list](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/phonemes/phonemes.txt) used in both phonemizers is the following :
 
 vowels | words     | diphtongs | words    | monophtongs | from loanwords
 -------|-----------|-----------|----------|-------------|---------------
