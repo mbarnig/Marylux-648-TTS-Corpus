@@ -164,6 +164,10 @@ The Marylux-648 dataset can be used for both learning options.
 ### Luxembourgish Phonemizers
 [eSpeak-NG](https://github.com/espeak-ng/espeak-ng) and [Rhasspy-Gruut](https://github.com/rhasspy/gruut) are two famous open-source phonemizers which are used by numerous TTS projects. A few months ago I developped the code to integrate the [luxembourgish language into eSpeak-NG](https://github.com/mbarnig/espeak-ng-lb). The code was merged into the main eSpeak-NG project with my [Github pull request #1038](https://github.com/espeak-ng/espeak-ng/pull/1038) on November 11, 2021. Now Luxembourgish is the 127th language supported by eSpeak-NG. A luxembourgish voice, based on formant synthesis techniques, is part of my package. The voice is intelligible, but of low quality. I did no sound optimization because my focus was put on the rule-based phonemization front-end process. The eSpeak-NG lb-phonemizer includes a luxembourgish emoji-dictionary which translates some children-emojis into the names of my grand-children. Some animal-graphics are also converted to the related luxembourgish phonetic transcriptions. The next figure shows a sentence which can be handled by eSpeak-NG-lb.
 
+An der &#x1F570; hunn sech den &#x1F9ED;&#x1F4A8; an d’&#x1F31E; gestridden, wie vun hinnen zwee wuel méi &#x1F4AA; wier, wéi e &#x1F6B6;, deen an ee waarme &#x1F9E5; agepak war, iwwert de &#x1F6E4; koum.
+
+Haut sinn &#x261D; mat mengen Enkelkanner &#x1F9D1;&#x200D;&#x1F91D;&#x200D;&#x1F9D1; , &#x1F466; , &#x1F467; , an &#x1F469; an den &#x1F3AA; gaangen. Do hunn mer e &#x1F98D;, eng &#x1F992;, en &#x1F418; an en &#x1F98F; gesinn.
+
 figure 13     
 ![emojis](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/emojis.png)
 
