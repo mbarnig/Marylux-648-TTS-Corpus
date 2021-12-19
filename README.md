@@ -245,7 +245,7 @@ The following archives of the Marylux-648 database are avaible for download in t
 
 Archives including audio files sampled with 22050 Hz :
 
-* marylux-648-22.05KHz-graphemes.zip
+* [MARYLUX-648-22.05KHz-graphemes.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-22.5KHz-graphemes.zip)
 * marylux-648-22.05KHz-phonemes.zip
 * marylux-648-22.05KHz-phonemes-ids.zip
 * marylux-648-22.05KHz-phonemes&blanks.zip
