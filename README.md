@@ -241,7 +241,7 @@ The checked and validated Marylux TTS database contains 648 luxembourgish sample
 5. Dunn huet d’Sonn d’Loft mat hire frëndleche Strale gewiermt, a schonn no kuerzer Zäit huet de Wanderer säi Mantel ausgedoen. 
 6. Do huet den Nordwand missen zouginn, datt d’Sonn vun hinnen zwee dee Stäerkste wier.
 ``` 
-The following archives of the Marylux-648 database are avaible for download in the release section  of the present Github repository.
+The following archives of the Marylux-648 database are available for download in the release section of the present Github repository.
 
 Archives including audio files sampled with 22050 Hz :
 
