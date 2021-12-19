@@ -252,7 +252,7 @@ Archives including audio files sampled with 22050 Hz :
 * marylux-648-22.05KHz-phonemes&blanks-ids.zip
 
 Archive including audio files sampled with 16000 Hz :
-* marylux-648-16KHz-graphemes.zip
+* ½marylux-648-16KHz-graphemes.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/marylux-648-16KHz-graphemes.zip)
 
 An good splitting of this database for machine learning is the following : 
 
