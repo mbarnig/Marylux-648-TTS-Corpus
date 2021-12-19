@@ -95,7 +95,7 @@ figure 6
 I imported the audio clips into Audacity and looped through the different tracks to listen the speech and to compare it with the text in the `metadata.csv` file, displayed in a text-editor. Some remaining errors have been redressed. At the end the database was ready for a final automatic quality check.
 
 ### Quality Check
-The final quality check was done with the notebook [TTS/notebooks/dataset_analysis/AnalyzeDataset.ipynb](https://github.com/mbarnig/TTS/blob/marylux/notebooks/dataset_analysis/AnalyzeDataset.ipynb) provided by [Coqui-ai](https://coqui.ai). This program checks if all wav files listed in the `metadata.csv` file are available and unique (no duplicates), calculates mean- and median-values for audio- and text-lengths, counts the number of words (...) in the dataset and plots the results. The next figure shows the plotted graph of the standard deviation between audio-lengths and character-counts. 
+The final quality check was done with the notebook [TTS/notebooks/dataset_analysis/AnalyzeDataset.ipynb](https://github.com/mbarnig/TTS/blob/marylux/notebooks/dataset_analysis/AnalyzeDataset.ipynb) provided by [Coqui-ai](https://coqui.ai). This program checks if all wav files listed in the `metadata.csv` file are available and unique (no duplicates), calculates mean- and median-values for audio- and text-lengths, counts the number of words (3.658) in the dataset and plots the results. The next figure shows the plotted graph of the standard deviation between audio-lengths and character-counts. 
 
 figure 7    
 ![std plot](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/plot-std-1.png)
