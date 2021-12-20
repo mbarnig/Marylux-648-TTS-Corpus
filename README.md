@@ -130,7 +130,7 @@ The following figures shows the plotted results for the validated Marylux-databa
 figure 10    
 ![quality check](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/plot-quality.png)
 
-figure 11
+figure 11       
 ![word-counts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/plot-words-counts.png)
 
 ## Dataset Phonemization
