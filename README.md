@@ -241,22 +241,20 @@ The checked and validated Marylux TTS database contains 648 luxembourgish sample
 5. Dunn huet d’Sonn d’Loft mat hire frëndleche Strale gewiermt, a schonn no kuerzer Zäit huet de Wanderer säi Mantel ausgedoen. 
 6. Do huet den Nordwand missen zouginn, datt d’Sonn vun hinnen zwee dee Stäerkste wier.
 ``` 
-The following archives of the Marylux-648 database are available for download in the release section of the present Github repository.
+Two archives of the Marylux-648 database are available for download in the release section of the present Github repository.
 
-Archives including audio files sampled with 22050 Hz :
+* Archive including audio files sampled with 22050 Hz : [MARYLUX-648-22005Hz.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-22050Hz.zip)
+* Archive including audio files sampled with 16000 Hz : [MARYLUX-648-16000Hz.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-16000Hz.zip)
 
-* [MARYLUX-648-22.05KHz-graphemes.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-22.5KHz-graphemes.zip)
-* marylux-648-22.05KHz-phonemes.zip
-* marylux-648-22.05KHz-phonemes-ids.zip
-* marylux-648-22.05KHz-phonemes&blanks.zip
-* marylux-648-22.05KHz-phonemes&blanks-ids.zip
+The following batch scripts to download, decompress, shuffles, split and install these archives are stored in the [scripts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/tree/main/scripts) folder.
 
-Archive including audio files sampled with 16000 Hz :
-* [marylux-648-16KHz-graphemes.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/marylux-648-16KHz-graphemes.zip)
+* create-metadatat-graphemes.sh
+* create-metadata-phonemes.sh
+* create-metadata-phonemes-ids.sh
+* create-metadata-phonemes-with-blanks.sh
+* create-metadata-phonemes-with-blanks.sh
 
 An good splitting of this database for machine learning is the following : 
 
 * training list : 640 (optimal for batch sizes of 64, 32, 20, 16, 10, 8, ...)
 * validation list : 8 (optimal for batch sizes of 8, 4, ...)
-
-Some batch scripts to download, decompress, shuffles, split and install these archives are stored in the [scripts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/tree/main/scripts) folder.
