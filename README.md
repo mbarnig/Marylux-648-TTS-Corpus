@@ -246,13 +246,7 @@ Two archives of the Marylux-648 database are available for download in the relea
 * Archive including audio files sampled with 22050 Hz : [MARYLUX-648-22005Hz.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-22050Hz.zip)
 * Archive including audio files sampled with 16000 Hz : [MARYLUX-648-16000Hz.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-16000Hz.zip)
 
-The following batch scripts to download, decompress, shuffles, split and install these archives are stored in the [scripts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/tree/main/scripts) folder.
-
-* create-metadatat-graphemes.sh
-* create-metadata-phonemes.sh
-* create-metadata-phonemes-ids.sh
-* create-metadata-phonemes-with-blanks.sh
-* create-metadata-phonemes-with-blanks.sh
+A batch script to download, decompress, shuffle, split and install these archives is stored in the [scripts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/tree/main/scripts/download_install_marylux-648.sh) folder. You must set several parameters in the script to install the files with the required features.
 
 An good splitting of this database for machine learning is the following : 
 
