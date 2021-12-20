@@ -20,13 +20,12 @@ text = "phonemes"
 format = "ljspeech"
 # create metadata.csv file and train-val splits
 
+# assemble metadata.csv
 if %text%=="letters" if %format%=="ljspeech"
-( )
+( paste -d "|" filenames.txt raw_text.txt clean_text.txt > metadata.csv )
    
-    
-
-
-
+if %text%=="letters" if %format%=="vctk"
+( paste -d "|" filenames.txt clean_text.txt > metadata.csv )    
 
 # create train-val splits
 shuf MARYLUX/metadata.csv > MARYLUX/metadata_shuf.csv
