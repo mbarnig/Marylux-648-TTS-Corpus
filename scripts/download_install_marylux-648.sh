@@ -17,7 +17,7 @@ unzip MARYLUX-648-16000.zip)
 # specify text : "letters", "phonemes", "phonemes-ids", "phonemes-with-blanks", phonemes-with-blanks-ids"
 text = "phonemes"
 # specify format : "ljspeech" (3 columns) or "vctk" (2 columns)
-format = "ljspeech"
+format = "vctk"
 # create metadata.csv file and train-val splits
 
 # assemble metadata.csv
