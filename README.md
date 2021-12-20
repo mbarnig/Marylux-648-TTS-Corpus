@@ -130,6 +130,9 @@ The following figures shows the plotted results for the validated Marylux-databa
 figure 10    
 ![quality check](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/plot-quality.png)
 
+figure 11
+![word-counts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/plot-words-counts.png)
+
 ## Dataset Phonemization
 ### Tensors
 A `deep machine learning TTS model` is trained with tensors, a sequence of integers created by converting the symbols from the samples to indices. The symbols can be latin characters, arabic, greek or russian letters, japanese or chinese idiograms and logograms, phonemes, or even emoji's, and much more. The conversion is commonly done by calculating the position (index) of a symbol, extracted from the input-sample, in a predefined symbol-list. Some examples are shown below :
@@ -149,12 +152,12 @@ tensor = tensor = [29 60 80 60 64 60 39 60 40 60 87 60 45 60 47 60 77 60 39 60 2
 ### International Phonetic Alphabet
 In the past an alphabetic system of phonetic notation has been used for TTS voice synthesis. The first pseudo-standards for the phonetic notation, for example [Kirshenbaum](https://en.wikipedia.org/wiki/Kirshenbaum) and [SAMPA](https://en.wikipedia.org/wiki/SAMPA), have been progressively replaced by the [International Phonetic Alphabet](https://en.wikipedia.org/wiki/International_Phonetic_Alphabet) (IPA), based primarily on the Latin script. To generate the phonemes from letters, a conversion program is required. Initially these programs have been rule based. Currently these converters, called g2p (grapheme to phoneme) models, are also trained by deep machine learning. An [automatic phonetic transcription tool for Luxembourgish](http://engelmann.uni.lu/transcription/), created by [Peter Gilles](https://wwwfr.uni.lu/recherche/fhse/dhum/people/peter_gilles), is available at the [luxembourgish web portal](https://infolux.uni.lu) of the [University of Luxembourg](https://wwwfr.uni.lu).
 
-figure 11    
+figure 12    
 ![infolux](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/infolux-transcription.png)
 
 The Luxembourgish Online Dictionary (LOD), maintained by the [Zenter fir d'Lëtzebuerger Sprooch](https://portal.education.lu/zls/) (ZLS), provides phonetic transcriptions for most luxembourgish words.
 
-figure 12    
+figure 13    
 ![LOD](https://github.com/mbarnig/Marylux-648-TTS-Corpus/blob/main/pictures/lod-housecker.png)
 
 As both the phonemizer- and the voice-models are based on deep machine learning with neural networks and tensors, a legitimate question is why doing two sequential trainings to convert letters into phonemes and afterwards convert phonemes via indices (integers) into audio signals. Why not transforming in one training process graphemes into audio signals ? Most recent TTS models are adopting this option and the resulting speech quality is even better then by using the classic procedure, but more computer performance and more training time is required to get valid results. 
