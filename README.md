@@ -251,6 +251,19 @@ Two archives of the Marylux-648 database are available for download in the relea
 * Archive including audio files sampled with 22050 Hz : [MARYLUX-648-22005Hz.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-22050Hz.zip)
 * Archive including audio files sampled with 16000 Hz : [MARYLUX-648-16000Hz.zip](https://github.com/mbarnig/Marylux-648-TTS-Corpus/releases/download/test-v1/MARYLUX-648-16000Hz.zip)
 
+An archive includes the following content:
+* file README with instructions how to assemble TTS training lists
+* folder /wavs with audio files
+* file raw_transcription.txt with sorted raw text lines
+* file clean_transcription.txt with sorted cleaned text lines
+* file phonemized_transcription.txt with sorted phonemized text lines
+* file audio_filenames.txt with sorted pathes to audio files
+* file audio_filesizes.txt with sorted size values of the audio files
+* file marylux.csv : list in LJSpeech format ready for training with COQUI-TTS models
+* file marylux_phonemes.csv : list in LJSpeech format ready for training with other TTS models
+
+The audio files sampled with 22050Hz are best suited to train mono-speaker TTS models, those sampled with 16000Hz are suited for multi-speaker models, together with other luxembourgish speech datasets.
+
 A batch script to download, decompress, shuffle, split and install these archives is stored in the [scripts](https://github.com/mbarnig/Marylux-648-TTS-Corpus/tree/main/scripts/download_install_marylux-648.sh) folder. You must set several parameters in the script to install the files with the required features letters, phonemes, phonemes-ids, .. and formats.
 
 An good splitting of this database for machine learning is the following : 
