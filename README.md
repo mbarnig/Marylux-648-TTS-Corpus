@@ -9,7 +9,7 @@ The dataset includes the following transcribed audio clips :
 * German utterances from Wikipedia : 198
 * French utterances from Wikipedia : 255
 
-I optimized this dataset to create a luxembourgish synthetic voice **Luxi** by  training a deep machine learning system, based on neural networks. The following transformations have been done :
+I optimized this dataset to create a luxembourgish synthetic voice by  training a deep machine learning system, based on neural networks. The following transformations have been done :
 * The 12 northwind samples have been removed from the training list to use these sentences for inference tests
 * The sampling rate of the audio clips has been changed from 48000 to 22050 Hz and the format has been changed from flac to wav
 * The silence at the beginning and the end of each audio clip has been removed 
